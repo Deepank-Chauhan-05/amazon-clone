@@ -90,3 +90,44 @@ sign.addEventListener("click",()=>{
     tri.classList.toggle("active");
     document.body.classList.toggle("stop-scroll");
 })
+
+
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+const cartCount = document.getElementById("cart-count");
+
+function updateCartCount() {
+    if(cartCount){
+        cartCount.textContent = cart.length;
+    }
+}
+
+updateCartCount();
+
+const addButtons = document.querySelectorAll(".add-cart");
+
+addButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const product = {
+            name: button.dataset.name,
+            price: button.dataset.price,
+            image: button.dataset.image,
+            quantity: 1
+        };
+
+        cart.push(product);
+
+        localStorage.setItem(
+            "cart",
+            JSON.stringify(cart)
+        );
+
+        updateCartCount();
+
+        alert(product.name + " added to cart");
+    });
+
+});
