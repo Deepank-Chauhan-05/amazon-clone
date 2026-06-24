@@ -723,3 +723,31 @@ body{
     overflow: hidden;
     height:100%;
 }
+
+/* CART COUNT */
+
+#cart-count{
+    position:absolute;
+    top:4px;
+    left:18px;
+    color:#f08804;
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* ADD TO CART BUTTON */
+
+.add-cart{
+    background:#ffd814;
+    border:none;
+    border-radius:20px;
+    padding:8px 14px;
+    margin-top:5px;
+    margin-left:20px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.add-cart:hover{
+    background:#f7ca00;
+}
