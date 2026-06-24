@@ -132,6 +132,7 @@
             </div>
             <div class="flex cart">
                 <i class="fas fa-shopping-cart"></i>
+                <p id="cart-count">0</p>
                 <span class="ca">Cart</span>
             </div>
         </div>
@@ -161,27 +162,49 @@
         <div class="container">
             <div class="container-1">
                 <div class="para">
-                    <p>You are on Amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</p><a href="https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_nxqtetlae_e&adgrpid=60571832564&hvpone=&hvptwo=&hvadid=486453138860&hvpos=&hvnetw=g&hvrand=12535176714638732243&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9061830&hvtargid=kwd-296458789801&hydadcr=14452_2154371&gclid=Cj0KCQjwnvOaBhDTARIsAJf8eVNJ6D0_UEAgzp9_IEK8-AtbwjPY81k1murdrRDI1PsbLEmGdhyqKDMaArp9EALw_wcB">Click here to go to amazon.in</a>
+                    <p>You are on Amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.</p>
                 </div>
                 <div class="product-comp">
                     <div class="box">
                         <h3>Gaming Accessories</h3>
                         <div class="box-a">
                             <div>
-                                <img src="images/ga1.jpg" alt="">
+                                img src="images/ga1.jpg" alt="">
                                 <span>Headsets</span>
+                                <button
+                                    class="add-cart"
+                                    data-name="Headsets"
+                                    data-price="1999"
+                                    data-image="images/ga1.jpg">
+                                    Add to Cart
+                                </button>
                             </div>
                             <div>
-                                <img src="images/ga2.jpg" alt="">
-                                <span>Keyboards</span>
+                            <button
+                                class="add-cart"
+                                data-name="Keyboards"
+                                data-price="2499"
+                                data-image="images/ga2.jpg">
+                                Add to Cart
+                            </button>
                             </div>
                             <div>
-                                <img src="images/ga3.jpg" alt="">
-                                <span>Computer mice</span>
+                            <button
+                                class="add-cart"
+                                data-name="Computer Mice"
+                                data-price="999"
+                                data-image="images/ga3.jpg">
+                                Add to Cart
+                            </button>
                             </div>
                             <div>
-                                <img src="images/ga4.jpg" alt="">
-                                <span>Chairs</span>
+                                <button
+                                    class="add-cart"
+                                    data-name="Gaming Chair"
+                                    data-price="5999"
+                                    data-image="images/ga4.jpg">
+                                    Add to Cart
+                                </button>
                             </div>
                         </div>
                         <a href="#">See More</a>
@@ -495,6 +518,6 @@
         <div class="copy">
         </div>
     </section>
-    <script src="app.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
